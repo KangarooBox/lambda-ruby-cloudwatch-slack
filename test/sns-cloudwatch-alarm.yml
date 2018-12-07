@@ -1,0 +1,17 @@
+---
+Records:
+  - EventSource: aws:sns
+    EventVersion: 1.0
+    EventSubscriptionArn: arn:aws:sns:us-west-2:123456789123:CloudWatchNotifications:00000000-0000-0000-0000-000000000000
+    Sns:
+      Type: Notification
+      MessageId: 00000000-0000-0000-0000-000000000000
+      TopicArn: arn:aws:sns:us-west-2:123456789123:CloudWatchNotifications
+      Subject: "ALARM: \"Test Alarm Status Check\" in US East (N. Virginia)"
+      Message: "{\"AlarmName\":\"Test Alarm Status Check\",\"AlarmDescription\":\"Check the status of the test alarm\",\"AWSAccountId\":\"123456789123\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint (10.0) was less than the threshold (10.0).\",\"StateChangeTime\":\"2016-07-06T22:52:05.079+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"INSUFFICIENT_DATA\",\"Trigger\":{\"MetricName\":\"TunnelState\",\"Namespace\":\"AWS/VPN\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MAXIMUM\",\"Unit\":null,\"Dimensions\":[{\"value\":\"vpn-0000000000\",\"name\":\"VpnId\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"LessThanThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"- TreatMissingData: Breaching\",\"EvaluateLowSampleCountPercentile\":\"\"}}"
+      Timestamp: 2016-07-06T22:52:05.110Z
+      SignatureVersion: 1
+      Signature: B+rJOetQq1dAGeWYD6PzBJ30PAdrZKMT4P8uo2GM1svMK6lj6lmtVTMksYhHqkRjD1/nQjPKXco3qRi9BcSoVAeXUcBGSPVPNC1QIsCPQiWs8bieqIbaoSIRhbDutZNzQ55eyEJG42eCXfX/ou6oCnNnRBWHapKQllG2saS7l1o7oYzzFbS9dqUbbkp/NaXeIgehBXMsK8Fu6FTnZDqovk0MLb0L1fErbmQmaXzdi+PDGZBm9UKvELfyxC7JSi7yZxM/30xkq884LhBX1DDuQnLR3jRNxYAF0w0oFPh9uwPHIdhlAW8Db9Q2CGGNBEqCHa8Ste4pHolj0000000000==
+      SigningCertUrl: https://sns.us-east-1.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f0000000000.pem
+      UnsubscribeUrl: "<https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1>"
+      MessageAttributes: {}
