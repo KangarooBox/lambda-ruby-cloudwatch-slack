@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require(:default)
+require 'time'
 
 module LambdaFunctions
   class Handler
@@ -38,7 +39,7 @@ module LambdaFunctions
               short: false
             }
           ]
-          timestamp = Time.new(message['StateChangeTime']).to_i rescue 1
+          timestamp = Time.parse(message['StateChangeTime']).to_i rescue 1
           color = message['NewStateValue'] == "ALARM" ? 'danger' : 'good'
 
         else
