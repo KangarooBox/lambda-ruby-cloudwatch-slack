@@ -1,0 +1,17 @@
+---
+Records:
+  - EventSource: aws:sns
+    EventVersion: 1.0
+    EventSubscriptionArn: arn:aws:sns:us-west-2:123456789123:SESAlerts:00000000-0000-0000-0000-000000000000
+    Sns:
+      Type: Notification
+      MessageId: 00000000-0000-0000-0000-000000000000
+      TopicArn: arn:aws:sns:us-west-2:123456789123:MyLambdaFunctionName
+      Subject: nil
+      Message: "{\"notificationType\":\"Bounce\",\"bounce\":{\"bounceType\":\"Transient\",\"bounceSubType\":\"General\",\"bouncedRecipients\":[{\"emailAddress\":\"me@example.com\",\"action\":\"failed\",\"status\":\"4.4.7\",\"diagnosticCode\":\"smtp; 554 4.4.7 Message expired: unable to deliver in 1440 minutes.<421 4.4.0 Unable to lookup DNS for example.com>\"}],\"timestamp\":\"1999-12-18T04:00:00.679Z\",\"feedbackId\":\"01000167c1bcc6d3-0000000-c11c-4b03-a67b-2fcccd2d275a-000000\",\"reportingMTA\":\"dsn; a8-54.smtp-out.amazonses.com\"},\"mail\":{\"timestamp\":\"1999-12-17T14:30:08.000Z\",\"source\":\"no-reply@example.com\",\"sourceArn\":\"arn:aws:ses:us-east-1:484742087443:identity/locus-health.com\",\"sourceIp\":\"35.153.167.206\",\"sendingAccountId\":\"484742087443\",\"messageId\":\"01000167bc92fc19-00000000-e5fb-4c27-90c1-33cf0ff41f66-000000\",\"destination\":[\"me@example.com\"],\"headersTruncated\":false,\"headers\":[{\"name\":\"Date\",\"value\":\"Mon 1 Dec 1999 14:30:08 +0000\"},{\"name\":\"From\",\"value\":\"no-reply@example.com\"},{\"name\":\"To\",\"value\":\"me@example.com\"},{\"name\":\"Message-ID\",\"value\":\"<5c17b2f0996e5_3342423423432@ip-10-10-10-10.mail>\"},{\"name\":\"Subject\",\"value\":\"This is the subject of the meessage.\"},{\"name\":\"Mime-Version\",\"value\":\"1.0\"},{\"name\":\"Content-Type\",\"value\":\"multipart/mixed; boundary=\\\"--==_mimepart_5c17b345534535_33b0103e0e8507a\\\"; charset=UTF-8\"},{\"name\":\"Content-Transfer-Encoding\",\"value\":\"7bit\"}],\"commonHeaders\":{\"from\":[\"no-reply@example.com\"],\"date\":\"Mon 1 Dec 1999 14:30:08 +0000\",\"to\":[\"me@example.com\"],\"messageId\":\"<5c17b2f0996e5_33b0123423423424@ip-10-10-10-10.mail>\",\"subject\":\"This is the subject of the message.\"}}}"
+      Timestamp: 2016-07-06T22:52:05.110Z
+      SignatureVersion: 1
+      Signature: B+rJOetQq1dAGeWYD6PzBJ30PAdrZKMT4P8uo2GM1svMK6lj6lmtVTMksYhHqkRjD1/nQjPKXco3qRi9BcSoVAeXUcBGSPVPNC1QIsCPQiWs8bieqIbaoSIRhbDutZNzQ55eyEJG42eCXfX/ou6oCnNnRBWHapKQllG2saS7l1o7oYzzFbS9dqUbbkp/NaXeIgehBXMsK8Fu6FTnZDqovk0MLb0L1fErbmQmaXzdi+PDGZBm9UKvELfyxC7JSi7yZxM/30xkq884LhBX1DDuQnLR3jRNxYAF0w0oFPh9uwPHIdhlAW8Db9Q2CGGNBEqCHa8Ste4pHolj0000000000==
+      SigningCertUrl: https://sns.us-east-1.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f0000000000.pem
+      UnsubscribeUrl: "<https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1>"
+      MessageAttributes: {}
